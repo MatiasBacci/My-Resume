@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&family=Zen+Dots&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="./scripts/jobs.js"></script>
+        <script src="./scripts/education.js"></script>
+    </head>
+    <body>
+        <!-- START NAVBAR -->
+        
+        <nav class="nav-bar">             
+                    <a href="#" class="animated-button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                          </svg></a>
+                    </a>
+                    <a href="work" class="animated-button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        WORK
+                    </a>
+                    <a href="courses" class="animated-button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        EDUCATION
+                    </a>
+                    <a href="contact" class="animated-button1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CONTACT ME
+                    </a>
+        </nav>
+        
+        <!-- END NAVBAR -->
+        <!-- HERO -->
+
+        <section  class="hero-image">
+            <canvas id="canvas"><script src="./scripts/hero.js"></script></canvas>
+            <div class="hero-text">
+                <img src="./images/Personal-photo.jpg" alt="Photo of myself" id="me">
+                <h1>I am Leandro Matias Bacci</h1>
+                <p>And This is My Resume</p>
+                <div>
+                    <p>I have managed to excel in the fulfillment of my tasks. I'm always
+                    trying to learn something new in order to stay in a
+                    steady progress. Currently venturing into the IT world and hoping to overcome new challenges.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+        
+        <!-- WORK -->
+        <section id="work">
+            <h1>My work experience!<svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-briefcase-fill briefcase" viewBox="0 0 16 16";>
+                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/></svg>
+            </h1>
+            <div id="expertise" class="expertise-card"></div>        
+        </section>
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+
+        <!-- EDUCATION-->
+        <section id="courses">
+            <h1>My Degrees and Courses below! <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-mortarboard-fill hat" viewBox="0 0 16 16">
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/></svg>
+            </h1>
+            <div id="education" class="education-card"></div>
+        </section>
+        
+    </body>
+</html>
