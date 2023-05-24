@@ -23,12 +23,3 @@ for (let course of degrees) {
         <p><b>Period</b>: ${course.period}</p>
     </div>`
 }
-
-for (let course of degrees) {
-    education.innerHTML += `
-    <div class="education">
-        <h1>${course.establishment}</h1>
-        <p><b>Career</b>: ${course.career}</p>
-        <p><b>Period</b>: ${course.period}</p>
-    </div>`
-}

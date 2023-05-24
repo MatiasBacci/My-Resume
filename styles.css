@@ -67,8 +67,14 @@
     margin: 0 ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
@@ -106,6 +112,7 @@ h1 {
     text-decoration: none;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            
 }
   
 .animated-button1::before {
@@ -120,16 +127,15 @@ h1 {
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
 }
-  
+
 .animated-button1:hover::before {
     opacity: 0.2;
-    text-decoration: none;
 }
   
 .animated-button1 span {
     position: absolute;
 }
-  
+
 .animated-button1 span:nth-child(1) {
     top: 0px;
     left: 0px;
@@ -174,18 +180,13 @@ h1 {
             animation: 2s animateLeft linear -1s infinite;
 }
   
-ul {
-    display: flex;
-    list-style: none;
-    padding: 2em;
-}
 
 .hero-image{
     font-family: 'Zen Dots','Roboto',Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -227,12 +228,10 @@ canvas {
 
 .divider {
     height: 5px;
-    background-color: darkgreen;
-    position: static;  
-    width:50%;
-    left: 200px;
-    margin: 100px 25% 25px 25%; 
-    
+    background-color: darkgreen; 
+    width: 75%;
+    margin-top: 20px;
+   
 }
 
 .briefcase {
@@ -245,16 +244,13 @@ canvas {
     height: 40px;
 }
 
-#work {
-    padding-left: 25%;
-    padding-right: 25%;
-    
-}
-
-#courses {
-    padding-left: 25%;
-    padding-right: 25%;
-    
+#work, #courses, .divider{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    scroll-behavior: smooth; 
 }
 
 .expertise-card, .education-card {
@@ -275,6 +271,7 @@ canvas {
     padding: 10px;
     box-shadow: 0 7px darkgreen;
     margin-top:20px;
+    
 }
 
 .expertise h1{
