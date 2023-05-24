@@ -62,9 +62,6 @@
     }
 }
 
-span{
-    position:absolute;
-}
 *{
     padding: 0;
     margin: 0 ;
@@ -254,6 +251,13 @@ canvas {
     place-items: center;
     margin: auto;
     scroll-behavior: smooth; 
+    
+}
+
+#work, #courses {
+    background: linear-gradient(white, rgba(211, 245, 211, 0.712));
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .expertise-card, .education-card {
