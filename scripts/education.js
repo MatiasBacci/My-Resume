@@ -9,6 +9,11 @@ const degrees = [
         career: "High School diploma in natural sciences",
         period: "Finished in 2006",
     },
+    {
+        establishment: "Udemy",
+        career: "Start Python from Zero",
+        period: "Finished in 2021",
+    },
 
     ]
 
