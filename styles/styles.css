@@ -10,11 +10,18 @@
     .hero-text p{
         display: none;
     }
+    .presentation{
+        display:flex;
+        position:relative;
+    }
 }
 
 @media  (max-width: 750px){
     .hero-text p{
         display: none;
+    }
+    .presentation{
+        display: block;
     }
 }
 
@@ -65,6 +72,7 @@
 *{
     padding: 0;
     margin: 0 ;
+    
 }
 
 html{
@@ -85,14 +93,14 @@ h1 {
 .nav-bar {
     display: flex;
     justify-content: flex-end;
-    position: sticky;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: black;
     color: var(--white);
     z-index: 10;
     list-style-type: none;
+    background: transparent;
 }
   
 .animated-button1 {
@@ -188,6 +196,7 @@ h1 {
     align-items: center;
     height: 100vh;
     width: 100%;
+    
 }
 
 .hero-text  {
@@ -196,6 +205,12 @@ h1 {
     position: absolute;
     padding-top: 20;
     justify-content: auto;
+}
+.presentation {
+    font-family: 'Zen Dots','Roboto',Helvetica, sans-serif;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #me {
@@ -218,10 +233,10 @@ h1 {
     padding-right: 25%;
 }
 
+
 canvas {
-    position: relative;
+    position: abs;
     display: inline-block;
-    z-index: -1;
     height: 100%;
     width: 100%;
 }
@@ -271,14 +286,12 @@ canvas {
     align-items: center;
 }
 
-.expertise, .education  {
-    color: black;
+.expertise, .education {   
     border-radius: 10px;
     width: auto;
     padding: 10px;
     box-shadow: 0 7px darkgreen;
     margin-top:20px;
-    
 }
 
 .expertise h1{
@@ -287,3 +300,34 @@ canvas {
     padding-bottom: 15px;
 }
 
+.contact {
+    padding: 60px;
+    margin: 5% 5% 5% 5%;
+    display:flex;
+    position: relative;
+    justify-content: space-evenly;
+
+    
+}
+
+.bi-whatsapp{
+    color: rgb(22, 119, 22);
+}
+
+.bi-facebook, .bi-linkedin {
+    color: darkblue;
+}
+
+.bi-instagram {
+    color: darkmagenta;
+}
+
+.bi-github {
+    color: black
+}
+
+.bi-whatsapp:hover, .bi-facebook:hover, .bi-linkedin:hover,
+.bi-instagram:hover, .bi-github:hover {
+    color: black;
+    opacity: 0.2;
+}
