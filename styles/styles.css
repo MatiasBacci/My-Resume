@@ -10,18 +10,12 @@
     .hero-text p{
         display: none;
     }
-    .presentation{
-        display:flex;
-        position:relative;
-    }
+    
 }
 
 @media  (max-width: 750px){
     .hero-text p{
         display: none;
-    }
-    .presentation{
-        display: block;
     }
 }
 
@@ -105,7 +99,7 @@ h1 {
   
 .animated-button1 {
     background: linear-gradient(-30deg, #0b3d13 50%, #082b15 50%);
-    padding: 20px 40px;
+    padding: 20px 20px;
     margin: 12px;
     border-radius: 7px;
     display: inline-block;
@@ -206,12 +200,6 @@ h1 {
     padding-top: 20;
     justify-content: auto;
 }
-.presentation {
-    font-family: 'Zen Dots','Roboto',Helvetica, sans-serif;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
 
 #me {
     height: 18em;
@@ -233,7 +221,6 @@ h1 {
     padding-right: 25%;
 }
 
-
 canvas {
     position: abs;
     display: inline-block;
@@ -246,7 +233,6 @@ canvas {
     background-color: darkgreen; 
     width: 75%;
     margin-top: 20px;
-   
 }
 
 .briefcase {
@@ -266,12 +252,11 @@ canvas {
     place-items: center;
     margin: auto;
     scroll-behavior: smooth; 
-    
 }
 
-#work, #courses {
+#work, #courses{
     background: linear-gradient(white, rgba(211, 245, 211, 0.712));
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-top: 50px;
 }
 
@@ -294,20 +279,18 @@ canvas {
     margin-top:20px;
 }
 
-.expertise h1{
+.expertise h1, .education h1{
     margin-top: 30px;
     text-align: center;
     padding-bottom: 15px;
 }
 
-.contact {
+#contact {
     padding: 60px;
-    margin: 5% 5% 5% 5%;
-    display:flex;
+    margin: 0 25% 0 25%;
+    display: flex;
     position: relative;
-    justify-content: space-evenly;
-
-    
+    justify-content: space-evenly;   
 }
 
 .bi-whatsapp{
